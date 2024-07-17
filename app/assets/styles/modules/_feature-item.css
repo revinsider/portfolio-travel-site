@@ -1,0 +1,20 @@
+.feature-item {
+
+  @mixin atSmall {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+
+  &__title {
+    margin: 0.7em 0 .8em 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+      margin: 0 0 .8em 0;
+    }
+  }
+}
